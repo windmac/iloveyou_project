@@ -14,6 +14,10 @@
    
 function changeColor() {
    
+   
+   timer++;
+   console.log(timer);
+   
    r= range*Math.sin(timer);
    g= range*Math.sin(timer);
    b= range*Math.sin(timer);
@@ -23,12 +27,13 @@ function changeColor() {
    
 }
 
-while(true)
+/*while(true)
 {
    timer++;
    console.log(timer);
    changeColor();
-}
+}*/
+setInterval(changeColor(),1000);
    
 
 </script>
