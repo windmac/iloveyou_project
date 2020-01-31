@@ -10,20 +10,7 @@
    var g = 0;
    var b = 0;
    
-  function hex(r,g,b) {   
-  var red = rgbToHex(r);
-  var green = rgbToHex(g);
-  var blue = rgbToHex(b);
-  return red+green+blue;
-   };
-   
-  function rgbToHex(rgb) { 
-  var hex = Number(rgb).toString(16);
-  if (hex.length < 2) {
-       hex = "0" + hex;
-  }
-  return hex;
-};
+
    
 function changeColor() {
    
@@ -31,7 +18,7 @@ function changeColor() {
    g= range*Math.sin(timer);
    b= range*Math.sin(timer);
    
-  document.getElementById("iou").style.color = hex(r,g,b);
+  //document.getElementById("iou").style.color = hex(r,g,b);
    
    
 }
