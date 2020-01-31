@@ -4,7 +4,9 @@
 <script>
    console.log("Test Script");
   
+   
    var timer = 0;
+   var speed = 0.01;
    var range = 255;
    var r = 0;
    var g = 0;
@@ -18,7 +20,7 @@
 function changeColor() {
    
    
-   timer++;
+   timer+=speed;
    console.log(timer);
    
    r= range*(Math.sin(timer)+1)/2;
