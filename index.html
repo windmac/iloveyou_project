@@ -4,10 +4,28 @@
 <script>
    console.log("Test Script");
   
+   var timer = 0;
+   var range = 255;
+   var r = 0;
+   var g = 0;
+   var b = 0;
 function changeColor() {
-  document.getElementById("iou").style.color = "blue";
+   
+   r= range*Math.sin(timer);
+   g= range*Math.sin(timer);
+   b= range*Math.sin(timer);
+   
+  document.getElementById("iou").style.color = rgb(r,g,b);
+   
+   
 }
-  
-changeColor();
+
+while(true)
+{
+   timer++;
+   changeColor();
+}
+   
+
 </script>
 
