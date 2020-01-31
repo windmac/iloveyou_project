@@ -9,13 +9,21 @@
    var r = 0;
    var g = 0;
    var b = 0;
+   
+  function hex(r,g,b) {   
+  var red = rgbToHex(r);
+  var green = rgbToHex(g);
+  var blue = rgbToHex(b);
+  return red+green+blue;
+   };
+   
 function changeColor() {
    
    r= range*Math.sin(timer);
    g= range*Math.sin(timer);
    b= range*Math.sin(timer);
    
-  document.getElementById("iou").style.color = rgb(r,g,b);
+  document.getElementById("iou").style.color = hex(r,g,b);
    
    
 }
