@@ -22,8 +22,8 @@ function changeColor() {
    console.log(timer);
    
    r= range*(Math.sin(timer)+1)/2;
-   g= range*(Math.sin(timer)+1)/2;
-   b= range*(Math.sin(timer)+1)/2;
+   g= range*(Math.sin(timer+1.57)+1)/2;
+   b= range*(Math.sin(timer+3.14)+1)/2;
    
   document.getElementById("iou").style.color = rgb(r,g,b);
    
@@ -40,15 +40,15 @@ setInterval(
 function () {
   //var randomColor = Math.floor(Math.random()*16777215).toString(16);
    r= range*(Math.sin(timer)+1)/2;
-   g= range*(Math.sin(timer)+1)/2;
-   b= range*(Math.sin(timer)+1)/2;
+   g= range*(Math.sin(timer+1.57)+1)/2;
+   b= range*(Math.sin(timer+3.14)+1)/2;
    
    
   document.body.style.backgroundColor = rgb(b,r,g);
 },1000);
 
    
-setInterval(function () {changeColor();},1000);
+setInterval(function () {changeColor();},10);
    
 
 </script>
