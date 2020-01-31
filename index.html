@@ -10,6 +10,9 @@
    var g = 0;
    var b = 0;
    
+ function rgb(r, g, b){
+  return "rgb("+r+","+g+","+b+")";
+}
 
    
 function changeColor() {
@@ -22,7 +25,7 @@ function changeColor() {
    g= range*Math.sin(timer);
    b= range*Math.sin(timer);
    
-  document.getElementById("iou").style.color =  "#"+(r).toString(16)+(g).toString(16)+(b).toString(16);
+  document.getElementById("iou").style.color = rgb(r,g,b);
    
    
 }
