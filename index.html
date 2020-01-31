@@ -22,7 +22,7 @@ function changeColor() {
    g= range*Math.sin(timer);
    b= range*Math.sin(timer);
    
-  //document.getElementById("iou").style.color = hex(r,g,b);
+  document.getElementById("iou").style.color =  "#"+(r).toString(16)+(g).toString(16)+(b).toString(16);
    
    
 }
@@ -33,6 +33,11 @@ function changeColor() {
    console.log(timer);
    changeColor();
 }*/
+   setInterval(
+function () {
+  var randomColor = Math.floor(Math.random()*16777215).toString(16);
+  document.body.style.backgroundColor = "#"+randomColor;
+
 setInterval(changeColor(),1000);
    
 
